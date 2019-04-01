@@ -12,5 +12,10 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each {|x| arr.include?(x)}
+  cheese_types.find {|x| arr.include?(x)}
 end
+
+[1, 3, 5, 7].find do |num|
+  num.odd?
+end
+  => 1
